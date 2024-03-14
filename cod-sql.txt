@@ -1,0 +1,6 @@
+create table client( id int not null primary key AUTO_INCREMENT,
+                    nume varchar(100) not null,
+                    telefon varchar(10) not null UNIQUE,
+                    email varchar(100) not null UNIQUE,
+                    inscriere date not null default CURRENT_DATE,
+                    membership varchar(100) not null);
